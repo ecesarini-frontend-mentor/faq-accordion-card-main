@@ -31,17 +31,31 @@
     }
 
     main {
+      height: 100%;
       max-width: 1440px;
       font-family: 'Kumbh Sans', sans-serif;
       font-size: 15px;
     }
     #main-container {
       background-color: white;
-      margin: 120px 5% 108px 5%;
     }
+    
     #outer-bg-container {
-      background-color: var();
+      background: linear-gradient(var(--soft-violet), var(--soft-blue));
+      margin: 35% 10%;
+    }
+    #inner-fb-container {
+      height: 100%;
+      display: flex;
+      justify-content: center;
       margin: 32%;
+    }
+    .inner-fb {
+      flex-basis: 50%;
+    }
+    #inner-fb-container-img {
+      height: 100%;
+      background-image: url(images/illustration-woman-online-desktop.svg);
     }
   </style>
 </head>
@@ -49,23 +63,26 @@
   <main>
     <div id="main-container">
       <div id="outer-bg-container">
-        <div id="inner-bg-container">
-          How many team members can I invite?
-          You can invite up to 2 additional users on the Free plan. There is no limit on 
-          team members for the Premium plan.
+        <div id="inner-fb-container">
+          <section id="inner-fb-container-img" class="inner-fb"></section>
+          <section id="inner-fb-container-desc" class="inner-fb">
+            How many team members can I invite?
+            You can invite up to 2 additional users on the Free plan. There is no limit on 
+            team members for the Premium plan.
 
-          What is the maximum file upload size?
-          No more than 2GB. All files in your account must fit your allotted storage space.
+            What is the maximum file upload size?
+            No more than 2GB. All files in your account must fit your allotted storage space.
 
-          How do I reset my password?
-          Click “Forgot password” from the login page or “Change password” from your profile page.
-          A reset link will be emailed to you.
+            How do I reset my password?
+            Click “Forgot password” from the login page or “Change password” from your profile page.
+            A reset link will be emailed to you.
 
-          Can I cancel my subscription?
-          Yes! Send us a message and we’ll process your request no questions asked.
+            Can I cancel my subscription?
+            Yes! Send us a message and we’ll process your request no questions asked.
 
-          Do you provide additional support?
-          Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            Do you provide additional support?
+            Chat and email support is available 24/7. Phone lines are open during normal business hours.
+          </section>
         </div>
       </div>
     </div>
