@@ -28,35 +28,43 @@
     }
     body {
       box-sizing: content-box;
+      margin: 0%;
     }
-
     main {
       height: 100%;
+      width: 100%;
       max-width: 1440px;
       font-family: 'Kumbh Sans', sans-serif;
-      font-size: 15px;
+      font-size: 12px;
     }
+
     #main-container {
+      height: 100%;
       background-color: white;
+      padding: 17% 5%;
     }
     
     #outer-bg-container {
-      width: 100%;
       background: linear-gradient(var(--soft-violet), var(--soft-blue));
-      margin: 35% 10%;
+      padding: 5% 16%;
     }
     #inner-fb-container {
-      height: 100%;
       display: flex;
-      justify-content: center;
-      margin: 32%;
+      justify-content: space-evenly;
+      background-color: white;
+      border-radius: 15px 15px;
+      min-height: 50vh;
     }
     .inner-fb {
       flex-basis: 50%;
     }
     #inner-fb-container-img {
-      min-height: 100%;
+      width: 100%;
+    }
+    .fb-img {
+      height: 100%;
       background-image: url(images/illustration-woman-online-desktop.svg);
+      background-repeat: no-repeat;
     }
   </style>
 </head>
@@ -65,7 +73,9 @@
     <div id="main-container">
       <div id="outer-bg-container">
         <div id="inner-fb-container">
-          <section id="inner-fb-container-img" class="inner-fb"></section>
+          <section id="inner-fb-container-img" class="inner-fb">
+            <div class="fb-img"></div>
+          </section>
           <section id="inner-fb-container-desc" class="inner-fb">
             How many team members can I invite?
             You can invite up to 2 additional users on the Free plan. There is no limit on 
