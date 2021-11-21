@@ -69,6 +69,20 @@
       background-image: url(images/illustration-woman-online-desktop.svg);
       background-repeat: no-repeat;
     }
+
+    #inner-fb-container-desc button {
+      width: 100%;
+      background-color: white;
+      text-align: left;
+      cursor: pointer;
+      border: none;
+      outline: none;
+    }
+    #inner-fb-container-desc .desc-navbar-li-dropdown {
+      display: none;
+      overflow: hidden;;
+
+    }
   </style>
 </head>
 <body>
@@ -84,27 +98,36 @@
             <nav class="desc-navbar">
               <ul class="desc-navbar-ul">
                 <li class="desc-navbar-li">
+                  <button type="button" class="desc-navbar-button">How many team members can I invite?</button>
                   <div class="desc-navbar-li-dropdown">
-                  How many team members can I invite?
-                  You can invite up to 2 additional users on the Free plan. There is no limit on 
-                  team members for the Premium plan.
+                    You can invite up to 2 additional users on the Free plan. There is no limit on 
+                    team members for the Premium plan.
+                  </div>
                 </li>
                 <li class="desc-navbar-li">
-                  What is the maximum file upload size?
-                  No more than 2GB. All files in your account must fit your allotted storage space.
+                  <button type="button" class="desc-navbar-button">What is the maximum file upload size?</button>
+                  <div class="desc-navbar-li-dropdown">
+                    No more than 2GB. All files in your account must fit your allotted storage space.
+                  </div>
                 </li>
                 <li class="desc-navbar-li">
-                  How do I reset my password?
-                  Click “Forgot password” from the login page or “Change password” from your profile page.
-                  A reset link will be emailed to you.
+                  <button type="button" class="desc-navbar-button">How do I reset my password?</button>
+                  <div class="desc-navbar-li-dropdown">
+                    Click “Forgot password” from the login page or “Change password” from your profile page.
+                    A reset link will be emailed to you.
+                  </div>
                 </li>
                 <li class="desc-navbar-li">
-                  Can I cancel my subscription?
-                  Yes! Send us a message and we’ll process your request no questions asked.
+                  <button type="button" class="desc-navbar-button">Can I cancel my subscription?</button>
+                  <div class="desc-navbar-li-dropdown">
+                    Yes! Send us a message and we’ll process your request no questions asked.
+                  </div>
                 </li>
                 <li class="desc-navbar-li">
-                  Do you provide additional support?
-                  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                  <button type="button" class="desc-navbar-button">Do you provide additional support?</button>
+                  <div class="desc-navbar-li-dropdown">
+                    Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                  </div>
                 </li>
               </ul>
             </nav>
@@ -117,5 +140,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </footer>
+  <script src="js-script.js"></script>
 </body>
 </html>
