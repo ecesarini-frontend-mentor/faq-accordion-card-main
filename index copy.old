@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    :root {
+      --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+      --soft-red: hsl(14, 88%, 65%);
+      --soft-violet: hsl(273, 75%, 66%);
+      --soft-blue: hsl(240, 73%, 65%);
+      --very-dark-grayish-blue: hsl(237, 12%, 33%);
+      --dark-grayish-blue: hsl(240, 6%, 50%);
+      --light-grayish-blue: hsl(240, 5%, 91%);
+    }
+    body {
+      box-sizing: content-box;
+      margin: 0%;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+    main {
+      height: 100%;
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+      font-family: 'Kumbh Sans', sans-serif;
+      font-size: 12px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    #main-container {
+      width: 100%;
+      margin: 0 auto;
+      min-height: 100%;
+      background-color: white;
+      padding: 17% 5%;
+    }
+    
+    #outer-bg-container {
+      background: linear-gradient(var(--soft-violet), var(--soft-blue));
+      padding: 5% 16%;
+    }
+
+    #inner-fb-container {
+      display: flex;
+      justify-content: space-evenly;
+      background-color: white;
+      border-radius: 15px 15px;
+      min-height: 50vh;
+    }
+    .inner-fb {
+      flex-basis: 50%;
+    }
+    #inner-fb-container-img {
+      width: 100%;
+    }
+    .fb-img {
+      height: 100%;
+      background-image: url(images/illustration-woman-online-desktop.svg);
+      background-repeat: no-repeat;
+    }
+    .inner-fb-desc {
+      margin: 0 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .inner-fb-desc h1 {
+      font-size: 25px;
+      font-weight: 700;
+      color: var(--very-dark-desaturated-blue);
+    }
+    .inner-fb-desc nav {
+      flex: 1;
+    }
+    .desc-navbar ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .desc-navbar .desc-navbar-li {
+      width: 100%;
+      max-width: 100%;
+      flex: 1;
+    }
+    .inner-fb-desc button {
+      position: relative;
+      max-width: 80%;
+      width: 100%;
+      padding-right: 15px;
+      display: inline-flex;
+      color: var(--dark-grayish-blue);
+      background-color: white;
+      text-align: left;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      margin-right: 10%;
+    }
+    .inner-fb-desc .desc-navbar-arrow {
+      position: absolute;
+      right: 0;
+      border: solid var(--dark-grayish-blue);
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+    }
+    .inner-fb-desc .desc-navbar-li-dropdown {
+      display: none;
+      overflow: hidden;
+      width: 70%;
+      margin: 3px 5px;
+      color: var(--light-grayish-blue);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div id="main-container">
+      <div id="outer-bg-container">
+        <div id="inner-fb-container">
+          <section id="inner-fb-container-img" class="inner-fb">
+            <div class="fb-img"></div>
+          </section>
+          <section id="inner-fb-desc-container" class="inner-fb">
+            <div class="inner-fb-desc">
+              <h1 class="desc-title">FAQ</h1>
+              <nav class="desc-navbar">
+                <ul class="desc-navbar-ul">
+                  <li class="desc-navbar-li">
+                    <button type="button" class="desc-navbar-button">How many team members can I invite?<i class="desc-navbar-arrow"></i></i></button>
+                    <div class="desc-navbar-li-dropdown">
+                      You can invite up to 2 additional users on the Free plan. There is no limit on 
+                      team members for the Premium plan.
+                    </div>
+                  </li>
+                  <li class="desc-navbar-li">
+                    <button type="button" class="desc-navbar-button">What is the maximum file upload size?<i class="desc-navbar-arrow"></i></button>
+                    <div class="desc-navbar-li-dropdown">
+                      No more than 2GB. All files in your account must fit your allotted storage space.
+                    </div>
+                  </li>
+                  <li class="desc-navbar-li">
+                    <button type="button" class="desc-navbar-button">How do I reset my password?<i class="desc-navbar-arrow"></i></button>
+                    <div class="desc-navbar-li-dropdown">
+                      Click “Forgot password” from the login page or “Change password” from your profile page.
+                      A reset link will be emailed to you.
+                    </div>
+                  </li>
+                  <li class="desc-navbar-li">
+                    <button type="button" class="desc-navbar-button">Can I cancel my subscription?<i class="desc-navbar-arrow"></i></button>
+                    <div class="desc-navbar-li-dropdown">
+                      Yes! Send us a message and we’ll process your request no questions asked.
+                    </div>
+                  </li>
+                  <li class="desc-navbar-li">
+                    <button type="button" class="desc-navbar-button">Do you provide additional support?<i class="desc-navbar-arrow"></i></button>
+                    <div class="desc-navbar-li-dropdown">
+                      Chat and email support is available 24/7. Phone lines are open during normal business hours.
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </footer>
+  <script src="js-script.js"></script>
+</body>
+</html>
