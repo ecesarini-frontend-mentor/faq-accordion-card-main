@@ -69,15 +69,28 @@
       flex-basis: 50%;
     }
     #inner-fb-container-img {
-    
+      position: relative;
       width: 100%;
+      min-height: 100% ;
     }
-    .fb-img {
+    #inner-fb-container-img .fb-img {
+      position: absolute;
+      right: 10%;
+      width: 100%;
       height: 100%;
-      background-image: url(images/illustration-woman-online-desktop.svg);
+      margin: auto 0;
+      background-image: url(images/illustration-woman-online-desktop.svg), url(images/bg-pattern-desktop.svg);
       background-repeat: no-repeat;
       background-size: contain;
+      background-position: center;
     }
+    #inner-fb-container-img .fb-img-box-container {
+      position: relative;
+    }
+    .fb-img-box {
+      position: absolute;
+    }
+    
     #inner-fb-desc-container {
       margin: 0 20px;
       display: flex;
@@ -121,12 +134,6 @@
     #inner-fb-desc-container .desc-navbar-arrow {
       position: absolute;
       right: 0;
-      border: solid var(--dark-grayish-blue);
-      border-width: 0 2px 2px 0;
-      display: inline-block;
-      padding: 3px;
-      transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
     }
     #inner-fb-desc-container .desc-navbar-li-dropdown {
       display: none;
@@ -143,40 +150,44 @@
       <div id="outer-bg-container">
         <div id="inner-fb-container">
           <section id="inner-fb-container-img" class="inner-fb">
-            <div class="fb-img"></div>
+            <div class="fb-img">
+              <div class="fb-img-box-container">
+                <img class="fb-img-box" src="images/illustration-box-desktop.svg">
+              </div>
+            </div>
           </section>
           <section id="inner-fb-desc-container" class="inner-fb">
               <h1 class="desc-title">FAQ</h1>
               <nav class="desc-navbar">
                 <ul>
                   <li>
-                    <button type="button" class="desc-navbar-button">How many team members can I invite?<i class="desc-navbar-arrow"></i></i></button>
+                    <button type="button" class="desc-navbar-button">How many team members can I invite?<i class="desc-navbar-arrow"><img src="images/icon-arrow-down.svg"></i></button>
                     <div class="desc-navbar-li-dropdown">
                       You can invite up to 2 additional users on the Free plan. There is no limit on 
                       team members for the Premium plan.
                     </div>
                   </li>
                   <li>
-                    <button type="button" class="desc-navbar-button">What is the maximum file upload size?<i class="desc-navbar-arrow"></i></button>
+                    <button type="button" class="desc-navbar-button">What is the maximum file upload size?<i class="desc-navbar-arrow"><img src="images/icon-arrow-down.svg"></i></button>
                     <div class="desc-navbar-li-dropdown">
                       No more than 2GB. All files in your account must fit your allotted storage space.
                     </div>
                   </li>
                   <li>
-                    <button type="button" class="desc-navbar-button">How do I reset my password?<i class="desc-navbar-arrow"></i></button>
+                    <button type="button" class="desc-navbar-button">How do I reset my password?<i class="desc-navbar-arrow"><img src="images/icon-arrow-down.svg"></i></button>
                     <div class="desc-navbar-li-dropdown">
                       Click “Forgot password” from the login page or “Change password” from your profile page.
                       A reset link will be emailed to you.
                     </div>
                   </li>
                   <li>
-                    <button type="button" class="desc-navbar-button">Can I cancel my subscription?<i class="desc-navbar-arrow"></i></button>
+                    <button type="button" class="desc-navbar-button">Can I cancel my subscription?<i class="desc-navbar-arrow"><img src="images/icon-arrow-down.svg"></i></button>
                     <div class="desc-navbar-li-dropdown">
                       Yes! Send us a message and we’ll process your request no questions asked.
                     </div>
                   </li>
                   <li>
-                    <button type="button" class="desc-navbar-button">Do you provide additional support?<i class="desc-navbar-arrow"></i></button>
+                    <button type="button" class="desc-navbar-button">Do you provide additional support?<i class="desc-navbar-arrow"><img src="images/icon-arrow-down.svg"></i></button>
                     <div class="desc-navbar-li-dropdown">
                       Chat and email support is available 24/7. Phone lines are open during normal business hours.
                     </div>
