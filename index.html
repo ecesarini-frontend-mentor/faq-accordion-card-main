@@ -46,7 +46,6 @@
       padding: 0;
     }
     #main-container {
-      width: 100%;
       margin: 0 auto;
       min-height: 100%;
       background-color: white;
@@ -71,25 +70,27 @@
     #inner-fb-container-img {
       width: 100%;
       height: 100%;
-      min-height: 100%;
-      margin: auto 0;
+      margin-left: -5vw;
+    }
+
+    #inner-fb-container-img .fb-img {
+      position: relative;
+      margin-right: auto 0;
       background-image: url(images/illustration-woman-online-desktop.svg), url(images/bg-pattern-desktop.svg);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
     }
-    #inner-fb-container-img > .fb-img-box-container {
-      position: absolute;
-      width: 100%;
-      height: 100%;
+    #inner-fb-container-img .fb-img-box-container {
+      height: calc(100vh - 2*120px - 2*70px);
+      position: relative;
     }
-    
-    /*
-    .fb-img-box {
+    #inner-fb-container-img .fb-img-box {
       position: absolute;
-      right: 0;
-      width: 100%;
-    }*/
+      top: 25.5vh;
+      left: .7vw;
+      width: 32%;
+    }
     
     #inner-fb-desc-container {
       margin: 0 20px;
@@ -150,8 +151,10 @@
       <div id="outer-bg-container">
         <div id="inner-fb-container">
           <section id="inner-fb-container-img" class="inner-fb-left">
-            <div class="fb-img-box-container">
+            <div class="fb-img">
+              <div class="fb-img-box-container">
                 <img class="fb-img-box" src="images/illustration-box-desktop.svg">
+              </div>
             </div>
           </section>
           <section id="inner-fb-desc-container" class="inner-fb-right">
