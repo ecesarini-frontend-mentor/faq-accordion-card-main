@@ -87,7 +87,7 @@
     }
     #inner-fb-container-img .fb-img-box {
       position: absolute;
-      top: 48%;
+      top: 47%;
       left: -.5%;
       width: 32%;
     }
@@ -143,6 +143,21 @@
       margin: 4px 5px;
       color: var(--light-grayish-blue);
     }
+
+  /* media query */
+  @media (max-width: 375px) {
+    #inner-fb-container {
+      flex-direction: column;
+    }
+    #inner-fb-container-img {
+      display: block;
+      margin: 0 auto;
+    }
+    #inner-fb-container-img .fb-img-box-container {
+      height: 50px;
+    }
+  }
+
   </style>
 </head>
 <body>
