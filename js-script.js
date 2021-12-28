@@ -1,3 +1,5 @@
+//faq-accordion-card expands on click
+
 function descNavbarClick() {
   let buttonClickOnNavBar = document.getElementsByClassName("desc-navbar-button");
   let dnbColor = "black";
@@ -17,4 +19,5 @@ function descNavbarClick() {
     });
   }
 }
+
 descNavbarClick();
